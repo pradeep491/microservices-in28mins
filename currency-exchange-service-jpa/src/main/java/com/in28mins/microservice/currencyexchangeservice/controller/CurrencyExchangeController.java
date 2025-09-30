@@ -1,12 +1,11 @@
-package com.in28mins.microservice.currencyexchangeservice;
+package com.in28mins.microservice.currencyexchangeservice.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.in28mins.microservice.currencyexchangeservice.bean.CurrencyExchange;
+import com.in28mins.microservice.currencyexchangeservice.repository.CurrencyExchangeRepository;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.math.BigDecimal;
 
 @RestController
 public class CurrencyExchangeController {
